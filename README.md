@@ -56,22 +56,33 @@ El proyecto se desarrolla de forma colaborativa mediante Git y GitHub, distribuy
 
 ```mermaid
 graph TD
-    A["MovieLens - Datos originales"] --> B["A - Ingesta y limpieza"]
-    B --> C["movies_clean.csv"]
-    C --> D["B - Análisis de datos"]
-    C --> E["C - API de TMDB"]
-    D --> F["Resultados del análisis"]
-    E --> G["movies10.csv"]
-    G --> H["D - API de Gemini"]
-    H --> I["movies10_es.csv"]
+    ML["MovieLens - Datos originales"]
+
+    ML --> M["movies.csv"]
+    ML --> RT["ratings.csv y tags.csv"]
+    ML --> L["links.csv"]
+
+    M --> A["A - Ingesta y limpieza"]
+    A --> MC["movies_clean.csv"]
+
+    MC --> B["B - Análisis de datos"]
+    RT --> B
+    B --> R["Resultados del análisis"]
+
+    MC --> C["C - API de TMDB"]
+    L --> C
+    C --> M10["movies10.csv"]
+
+    M10 --> D["D - API de Gemini"]
+    D --> ES["movies10_es.csv"]
 
     classDef origen fill:#4338ca,stroke:#3730a3,color:#ffffff
     classDef proceso fill:#2563eb,stroke:#1d4ed8,color:#ffffff
     classDef resultado fill:#9333ea,stroke:#7e22ce,color:#ffffff
 
-    class A origen
-    class B,D,E,H proceso
-    class C,F,G,I resultado
+    class ML,M,RT,L origen
+    class A,B,C,D proceso
+    class MC,R,M10,ES resultado
 ```
 
 El flujo de trabajo comienza con la preparación de los datos originales. El catálogo limpio sirve como base tanto para el análisis exploratorio como para el enriquecimiento mediante TMDB. Finalmente, Gemini utiliza las sinopsis obtenidas para generar contenido en español.
