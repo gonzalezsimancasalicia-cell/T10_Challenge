@@ -65,9 +65,9 @@ graph TD
     G --> H["D - API de Gemini"]
     H --> I["movies10_es.csv"]
 
-    classDef origen fill:#475569,stroke:#475569,color:#ffffff
-    classDef proceso fill:#1e3a5f,stroke:#1e3a5f,color:#ffffff
-    classDef resultado fill:#285e61,stroke:#285e61,color:#ffffff
+    classDef origen fill:#4338ca,stroke:#3730a3,color:#ffffff
+    classDef proceso fill:#2563eb,stroke:#1d4ed8,color:#ffffff
+    classDef resultado fill:#9333ea,stroke:#7e22ce,color:#ffffff
 
     class A origen
     class B,D,E,H proceso
