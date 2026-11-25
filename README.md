@@ -10,7 +10,10 @@ Catálogo de películas enriquecido a partir del dataset MovieLens: análisis co
 
 | Persona | Rol | Notebook / tarea |
 |---|---|---|
-| <nombre> | <rol> | <notebook> |
+| Alicia | <rol> | O1_ingesta_limpieza |
+| Gabriel | <rol> | <O2_analisis> |
+| Javier | <rol> | <O3_tmdb> |
+| Pedro | <rol> | <O4_gemini> |
 
 ## Instalación
 
@@ -27,7 +30,7 @@ cp .env.example .env            # y rellenad las claves
 
 | Variable | Dónde se obtiene |
 |---|---|
-| `TMDB_READ_ACCESS_TOKEN` o `TMDB_API_KEY` | themoviedb.org → Settings → API |
+| `TMDB_READ_ACCESS_TOKEN`| themoviedb.org → Settings → API |
 | `GEMINI_API_KEY` | aistudio.google.com |
 
 ## Ejecución
