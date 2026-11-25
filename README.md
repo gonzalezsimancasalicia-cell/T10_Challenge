@@ -10,10 +10,10 @@ Catálogo de películas enriquecido a partir del dataset MovieLens: análisis co
 
 | Persona | Rol | Notebook / tarea |
 |---|---|---|
-| Alicia | <rol> | O1_ingesta_limpieza |
-| Gabriel | <rol> | <O2_analisis> |
-| Javier | <rol> | <O3_tmdb> |
-| Pedro | <rol> | <O4_gemini> |
+| Alicia | Rsponsable de Repo y datos | O1_ingesta_limpieza |
+| Gabriel | Análisis de datos | <O2_analisis> |
+| Javier | Integración con APIS | <O3_tmdb> |
+| Pedro | IA Generativa | <O4_gemini> |
 
 ## Instalación
 
